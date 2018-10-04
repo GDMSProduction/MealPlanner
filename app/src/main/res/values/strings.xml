@@ -3,4 +3,19 @@
     <string name="username">Username:</string>
     <string name="login">Login</string>
     <string name="password">Password:</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="complete">Complete</string>
+    <string name="back"><![CDATA[<< Back]]></string>
+    <string name="title_activity_info_page">InfoPage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_Info" />
+    <string name="title_Calendar" />
+    <string name="Recipes" />
+    <string name="meal_prep_information">Meal Prep Information</string>
+    <string name="meal_prep_info">Meal Prep Info</string>
+    <string name="info">Info</string>
+    <string name="calendar">Calendar</string>
+    <string name="recipe">Recipe</string>
 </resources>

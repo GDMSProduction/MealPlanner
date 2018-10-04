@@ -7,26 +7,46 @@ import android.view.View;
 import android.widget.Button;
 
 public class StartApp extends AppCompatActivity {
-    private Button button;
+
+    private Button logbut;
+    private Button signbut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_app);
 
-        button = (Button) findViewById(R.id.LoginButton);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        logbut = (Button) findViewById(R.id.LoginButton);
+        logbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openLoginPage();
             }
         });
+
+
+        signbut = (Button) findViewById(R.id.SignUpButton);
+        signbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                openSignUpPage();
+            }
+        });
+
+
     }
 
     public void openLoginPage()
     {
         Intent intent = new Intent(this, LoginPage.class);
         startActivity(intent);
+    }
+
+    public void openSignUpPage()
+    {
+        Intent intents = new Intent(this, SignUpPage.class);
+        startActivity(intents);
     }
 
 }
