@@ -12,6 +12,8 @@ public class CalendarTab extends AppCompatActivity {
 
     private Button signOut;
 
+    private Button RecBut;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,12 +35,25 @@ public class CalendarTab extends AppCompatActivity {
            }
        });
 
+       RecBut = (Button) findViewById(R.id.CalendarPageIRecBut);
+       RecBut.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               GotoRecipePage();
+           }
+       });
+
     }
 
      public void openStartPagefromCalendar()
      {
          Intent intentzzz = new Intent(this, StartApp.class);
          startActivity(intentzzz);
+     }
+
+     public void GotoRecipePage(){
+        Intent intent = new Intent(this, RecipePage.class);
+        startActivity(intent);
      }
 
     public void openInfoPage()

@@ -21,7 +21,8 @@
         <activity
             android:name=".InfoPage"
             android:label="@string/title_activity_info_page" />
-        <activity android:name=".CalendarTab"></activity>
+        <activity android:name=".CalendarTab" />
+        <activity android:name=".RecipePage"></activity>
     </application>
 
 </manifest>
