@@ -18,4 +18,5 @@
     <string name="info">Info</string>
     <string name="calendar">Calendar</string>
     <string name="recipe">Recipe</string>
+    <string name="sign_out">Sign Out</string>
 </resources>

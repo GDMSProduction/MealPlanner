@@ -20,7 +20,8 @@
         <activity android:name=".SignUpPage" />
         <activity
             android:name=".InfoPage"
-            android:label="@string/title_activity_info_page"></activity>
+            android:label="@string/title_activity_info_page" />
+        <activity android:name=".CalendarTab"></activity>
     </application>
 
 </manifest>
