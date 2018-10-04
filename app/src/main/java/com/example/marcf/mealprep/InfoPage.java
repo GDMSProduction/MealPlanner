@@ -14,6 +14,7 @@ public class InfoPage extends AppCompatActivity {
 
 private Button calendar;
 private Button SignOutInfo;
+private Button recipeBut;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,14 @@ private Button SignOutInfo;
             }
         });
 
+        recipeBut = (Button) findViewById(R.id.InfoPageRecobut);
+        recipeBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GotoRecipePage();
+            }
+        });
+
 
     }
 
@@ -49,6 +58,12 @@ private Button SignOutInfo;
     public void InfotoStart()
     {
         Intent intens = new Intent(this, StartApp.class);
+        startActivity(intens);
+    }
+
+    public void GotoRecipePage()
+    {
+        Intent intens = new Intent(this, RecipePage.class);
         startActivity(intens);
     }
 

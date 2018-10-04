@@ -12,6 +12,8 @@ public class RecipePage extends AppCompatActivity {
 
     private Button calendar;
 
+    private Button infoBut;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,14 @@ public class RecipePage extends AppCompatActivity {
             }
         });
 
+        infoBut = (Button) findViewById(R.id.RecipeInfo);
+        infoBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GotoInfoPage();
+            }
+        });
+
     }
 
     public void GotoStartPage(){
@@ -44,6 +54,11 @@ public class RecipePage extends AppCompatActivity {
 
     public void ToCalendar(){
         Intent intent = new Intent(this, CalendarTab.class);
+        startActivity(intent);
+    }
+
+    public void GotoInfoPage(){
+        Intent intent = new Intent(this, InfoPage.class);
         startActivity(intent);
     }
 
