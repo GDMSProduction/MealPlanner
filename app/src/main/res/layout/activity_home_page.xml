@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipePage">
+    tools:context=".HomePage">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -21,7 +21,6 @@
         android:layout_width="96dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:text="Name"
         android:textColor="@android:color/black"
         android:textSize="20sp"
@@ -44,20 +43,18 @@
         android:layout_width="104dp"
         android:layout_height="60dp"
 
+        android:background="@android:color/darker_gray"
         android:drawableTop="@drawable/ic_home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/infobutton" />
 
     <Button
         android:id="@+id/infobutton"
-        android:layout_width="107dp"
+        android:layout_width="104dp"
         android:layout_height="60dp"
-        android:layout_marginStart="8dp"
         android:drawableTop="@drawable/ic_infoicon"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/calenderbutton"
-        app:layout_constraintHorizontal_bias="0.803"
-        app:layout_constraintStart_toEndOf="@+id/homebutton" />
+        app:layout_constraintEnd_toStartOf="@+id/calenderbutton" />
 
     <Button
         android:id="@+id/calenderbutton"
@@ -72,12 +69,9 @@
         android:layout_width="104dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray"
         android:drawableTop="@drawable/ic_recipe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SignOutButton"
         app:layout_constraintVertical_bias="1.0" />
-
-
 </android.support.constraint.ConstraintLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.marcf.mealprep">
+    package="com.example.junji.meal">
 
     <application
         android:allowBackup="true"
@@ -9,20 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartApp">
+        <activity android:name=".MainPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginPage" />
+        <activity android:name=".LogInPage" />
         <activity android:name=".SignUpPage" />
-        <activity
-            android:name=".InfoPage"
-            android:label="@string/title_activity_info_page" />
-        <activity android:name=".CalendarTab" />
-        <activity android:name=".RecipePage"></activity>
+        <activity android:name=".HomePage" />
+        <activity android:name=".InfoPage" />
+        <activity android:name=".CalenderPage" />
+        <activity android:name=".RecipePage" />
+        <activity android:name=".ProfilePage1" />
+        <activity android:name=".ProfilePage2"></activity>
     </application>
 
 </manifest>
