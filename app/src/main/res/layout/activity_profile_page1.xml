@@ -38,24 +38,24 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/WeightButton"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_dark"
         android:text="Weight Tracker"
         android:textColor="@android:color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/CalorieButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/CalorieButton"
         android:layout_width="193dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="264dp"
         android:text="Calorie Tracker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/WeightButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -96,7 +96,7 @@
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/CalorieButton" />
 
     <EditText
         android:id="@+id/editText5"
@@ -120,10 +120,18 @@
         android:id="@+id/textView13"
         android:layout_width="383dp"
         android:layout_height="62dp"
-        android:text="Result : "
+        android:text="Weight Result : "
         android:textColor="@android:color/black"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

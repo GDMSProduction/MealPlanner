@@ -67,5 +67,9 @@ public class HomePage extends AppCompatActivity {
         Intent intent = new Intent(this,RecipePage.class);
         startActivity(intent);
     }
+    public  void  openProfile(View view){
+        Intent intent = new Intent(this,ProfilePage1.class);
+        startActivity(intent);
+    }
 
 }

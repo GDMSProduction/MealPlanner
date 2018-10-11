@@ -65,4 +65,8 @@ public class InfoPage extends AppCompatActivity {
         Intent intent = new Intent(this,RecipePage.class);
         startActivity(intent);
     }
+    public void gotoprofile(View view) {
+        Intent intent = new Intent(this,ProfilePage1.class);
+        startActivity(intent);
+    }
 }
