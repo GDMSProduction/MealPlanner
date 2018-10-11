@@ -1,3 +1,5 @@
-<resources>
+﻿<resources>
     <string name="app_name">meal</string>
+    <string name="backArrow"><![CDATA[<-]]></string>
+    <string name="nextArrow"><![CDATA[->]]></string>
 </resources>
