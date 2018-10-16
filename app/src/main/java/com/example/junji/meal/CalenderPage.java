@@ -17,6 +17,56 @@ public class CalenderPage extends AppCompatActivity {
     private Button home;
     private Button info;
     private Button recipe;
+    public String week1 = "Breakfast: " +
+            "\n-1 toast and 2 scrambled eggs" +
+            "\n OR" +
+            "\n-Fruit Plate" +
+            "\n\nLunch: " +
+            "\n-Miso Soup" +
+            "\n OR" +
+            "\n-Greek Salad" +
+            "\n\nSnack: " +
+            "\n-1 Boiled Egg" +
+            "\n OR" +
+            "\n-Cup of Fruit" +
+            "\n\nDinner: " +
+            "\n-Baked Salmon South Western veggie tacos" +
+            "\n OR" +
+            "\n-Stir Fried Veggies";
+
+    public String week2 = "Breakfast: " +
+            "\n-Oatmeal with apples" +
+            "\n OR" +
+            "\n-Fresh Fruit Plate" +
+            "\n\nLunch: " +
+            "\n-Zucchini cashew soup" +
+            "\n OR" +
+            "\n-Microgreen salad" +
+            "\n\nSnack: " +
+            "\n-cup of blueberries with a green apple" +
+            "\n OR" +
+            "\n-3 celery stalks with almond butter" +
+            "\n\nDinner: " +
+            "\n-Baked Tempeh" +
+            "\n OR" +
+            "\n-Baked Sweet Potato";
+
+    public String week3 = "Breakfast: " +
+            "\n-Farina with walnuts and an apple" +
+            "\n OR" +
+            "\n-Fresh Fruit Plate" +
+            "\n\nLunch: " +
+            "\n-Jicama-Avocado salad" +
+            "\n OR" +
+            "\n-sweet potato & roasted red pepper bisque" +
+            "\n\nSnack: " +
+            "\n-boiled egg with whole grain crackers" +
+            "\n OR" +
+            "\n-1/2 cup cooked quinoa with avocado" +
+            "\n\nDinner: " +
+            "\n-Asian stir fry" +
+            "\n OR" +
+            "\n-Southwestern veggie taco";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +107,10 @@ public class CalenderPage extends AppCompatActivity {
                 OpenRecipePage();
             }
         });
+
+        TextView calendarList = findViewById(R.id.Textscroll);
+        calendarList.setText(week1);
+
     }
     public  void OpenMainPage(){
         Intent intent = new Intent(this,MainPage.class);
