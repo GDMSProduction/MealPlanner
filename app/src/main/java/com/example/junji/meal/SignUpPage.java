@@ -14,7 +14,7 @@ public class SignUpPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_page);
-        back = (Button) findViewById(R.id.BackButton2);
+        back = (Button) findViewById(R.id.BackToView2);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

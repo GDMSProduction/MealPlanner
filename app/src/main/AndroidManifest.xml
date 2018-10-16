@@ -23,7 +23,10 @@
         <activity android:name=".CalenderPage" />
         <activity android:name=".RecipePage" />
         <activity android:name=".ProfilePage1" />
-        <activity android:name=".ProfilePage2"></activity>
+        <activity android:name=".ProfilePage2" />
+        <activity android:name=".RecipeView" />
+        <activity android:name=".Calenderdecision" />
+        <activity android:name=".Image_1"></activity>
     </application>
 
 </manifest>
