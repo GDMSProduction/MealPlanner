@@ -67,21 +67,6 @@
         app:layout_constraintTop_toBottomOf="@+id/SignOutButton"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/Textscroll"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:scrollbars="vertical"
-        android:text="sssYou are here: Home » Blog » Meal Planning » How to Meal Prep – Salmon HOW TO MEAL PREP – SALMON March 4, 2018 by Lacey Baier 3 Comments Pin 274 Share 22 Yum 229 Tweet 525 SHARES PRINT RECIPE | JUMP TO RECIPE How to meal prep salmon for the week, including an easy salmon recipe, all for just $6 per meal. This is the best way to cook salmon for meal prep and is the best salmon recipe ever! How to Meal Prep Salmon | How to meal prep salmon for the week, including an easy salmon recipe, all for just $6 per meal! Cook once and eat all week! | A Sweet Pea Chef By now, I’m hoping you’ve read my How To Meal Prep Chicken and you’ve completely jumped onto the meal prep wagon. In fact, raise your hand if you’ve got your meal prepped chicken in the fridge or freezer right now. Woot! If you haven’t checked it out, definitely do so BUT FIRST make this easy salmon meal prep right here. If meal prep is new to you, that’s awesome. Welcome to an easier way of living a healthy and tasty lifestyle. Meal prep solves the problem of wanting to eat healthy, but every time you go to grab something from the fridge, nothing is ready to eat and you really, really, REALLY don’t feel like cooking a full healthy, well-balanced dinner. With meal prep, you choose the time and the day you actually have energy and time (key factors, let’s be honest) and prep your meals ahead of time. Keep reading if you want to make life SO MUCH EASIER. Salmon filet divided into 4 equal portions, ready to be topped with spice rub and cooked for an easy salmon recipe as part of how to meal prep salmon.Easy spice rub recipe which includes cinnamon, cumin, sea salt, dry mustard, sea salt, for an easy salmon recipe as part of how to meal prep salmon for the week. HOW TO MEAL PREP SALMON You can very easily learn how to meal prep salmon, I promise. First, you need to decide on the best way to cook salmon for meal prep. Because salmon can come in all shapes and sizes, I like to but my own large, skinned fillet and then divide it into 4-6 oz. portions. That way, I know the exact size of the salmon portions AND I save money of having the grocery store pre-slice it. The big trick with meal prepping salmon is (1) the spice rub, and (2) pan-roasting. Seriously. Follow this easy salmon recipe and you’ll be head over heals when reheating your salmon"
-        app:layout_constraintBottom_toTopOf="@+id/calenderbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
-
     <ImageView
         android:id="@+id/profile"
         android:layout_width="85dp"
@@ -105,5 +90,20 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toTopOf="@+id/calenderbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 
 </android.support.constraint.ConstraintLayout>

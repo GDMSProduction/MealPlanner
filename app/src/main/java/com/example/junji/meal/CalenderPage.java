@@ -17,6 +17,7 @@ public class CalenderPage extends AppCompatActivity {
     private Button home;
     private Button info;
     private Button recipe;
+
     public String week1 = "Breakfast: " +
             "\n-1 toast and 2 scrambled eggs" +
             "\n OR" +
@@ -72,9 +73,16 @@ public class CalenderPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calender_page);
-        TextView Textscroll = findViewById(R.id.Textscroll) ;
-        Textscroll.setMovementMethod(new ScrollingMovementMethod());
+        //TextView Textscroll = findViewById(R.id.Textscroll) ;
+        //Textscroll.setMovementMethod(new ScrollingMovementMethod());
 
+        edit = (Button) findViewById(R.id.Edit);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenCalender();
+            }
+        });
 
         signout = (Button) findViewById(R.id.SignOutButton);
         signout.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +139,10 @@ public class CalenderPage extends AppCompatActivity {
 
     public void gotoprofile(View view) {
         Intent intent = new Intent(this,ProfilePage1.class);
+        startActivity(intent);
+    }
+    public void OpenCalender(){
+        Intent intent = new Intent(this,Calenderdecision.class);
         startActivity(intent);
     }
 }
