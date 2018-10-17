@@ -65,7 +65,7 @@
         android:text="Week 1:"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/WeightWeek1"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -75,7 +75,7 @@
         android:text="Week 2:"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/WeightWeek2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -85,11 +85,11 @@
         android:text="Week 3:"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/WeightWeek3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/WeightWeek1"
         android:layout_width="193dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
@@ -99,32 +99,33 @@
         app:layout_constraintTop_toBottomOf="@+id/CalorieButton" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/WeightWeek2"
         android:layout_width="198dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/WeightWeek1" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/WeightWeek3"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/WeightWeek2" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="383dp"
+        android:id="@+id/WeightResult"
+        android:layout_width="262dp"
         android:layout_height="62dp"
-        android:text="Weight Result : "
+        android:layout_marginEnd="8dp"
+        android:text="Weight Lost : "
         android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Weightresultclick"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -134,4 +135,13 @@
         android:text="Home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Weightresultclick"
+        android:layout_width="125dp"
+        android:layout_height="67dp"
+        android:text="Check"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
