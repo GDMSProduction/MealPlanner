@@ -17,6 +17,7 @@ public class CalenderPage extends AppCompatActivity {
     private Button home;
     private Button info;
     private Button recipe;
+    private Button edit;
 
     public String week1 = "Breakfast: " +
             "\n-1 toast and 2 scrambled eggs" +
@@ -116,8 +117,8 @@ public class CalenderPage extends AppCompatActivity {
             }
         });
 
-        TextView calendarList = findViewById(R.id.Textscroll);
-        calendarList.setText(week1);
+        //TextView calendarList = findViewById(R.id.Textscroll);
+        //calendarList.setText(week1);
 
     }
     public  void OpenMainPage(){

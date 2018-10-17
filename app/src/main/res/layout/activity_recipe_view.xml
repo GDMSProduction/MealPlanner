@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/image2" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/RecipeForItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

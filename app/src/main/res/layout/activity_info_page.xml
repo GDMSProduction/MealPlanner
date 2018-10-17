@@ -146,9 +146,11 @@
 
 \n5.)  Look for shortcuts, like easy ways to cook large amounts of food or pre-cut veggies and fruits
 
-\n6.) Cook meals on SUnday and start at Monday for start of week
+\n6.)  Make sure you look how much each recipe makes , because you will need multiple of ingredients if you plan to make extra servings
 
-\n7.)  Remember why you are doing this"
+\n7.) Cook meals on SUnday and start at Monday for start of week
+
+\n8.)  Remember why you are doing this"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
