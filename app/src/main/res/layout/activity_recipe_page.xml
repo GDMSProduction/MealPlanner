@@ -83,14 +83,16 @@
 
     <Button
         android:id="@+id/breakfast"
-        android:layout_width="105dp"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Breakfast"
-        app:layout_constraintBaseline_toBaselineOf="@+id/lunch"
-        app:layout_constraintEnd_toStartOf="@+id/lunch"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
 
     <Button
         android:id="@+id/lunch"
@@ -105,7 +107,7 @@
     <Button
         android:id="@+id/dinner"
         android:layout_width="105dp"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Dinner"
@@ -128,84 +130,143 @@
         app:layout_constraintVertical_bias="0.104" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/ItemNum1"
         android:layout_width="161dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="176dp"
         android:scrollbars="vertical"
-        android:text="MealPrep"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/calenderbutton"
-        app:layout_constraintEnd_toStartOf="@+id/View"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/lunch"
-        app:layout_constraintVertical_bias="0.084" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="88dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:text="1 Toast with 2 scrambled Eggs"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/foodNum1Pic"
+        android:layout_width="88dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image1" />
 
     <Button
         android:id="@+id/View"
         android:layout_width="100dp"
-        android:layout_height="55dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="2dp"
         android:text="View"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/recipebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/snack"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.049" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="87dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="192dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <ImageButton
+        android:id="@+id/foodNum2Pic"
+        android:layout_width="73dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="232dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image3" />
 
     <TextView
-        android:id="@+id/textView19"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/ItemNum2"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="8dp"
-        android:text="Mealprep2"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/View2"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        android:layout_marginBottom="8dp"
+        android:text="Fresh Fruit Plate"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
         android:id="@+id/View2"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:text="View"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/View" />
+
+    <ImageView
+        android:id="@+id/foodNum4Pic"
+        android:layout_width="66dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homebutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image2" />
+
+    <ImageView
+        android:id="@+id/foodNum3Pic"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/ItemNum3"
+        android:layout_width="161dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="252dp"
+        android:scrollbars="vertical"
+        android:text="Farina with walnuts and apples"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foodNum3Pic" />
+
+    <TextView
+        android:id="@+id/ItemNum4"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="192dp"
+        android:scrollbars="vertical"
+        android:text="Oatmeal with apples"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mealTypeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MealType"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/foodItemNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:text="itemNumber"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mealTypeNum" />
 
 
 </android.support.constraint.ConstraintLayout>

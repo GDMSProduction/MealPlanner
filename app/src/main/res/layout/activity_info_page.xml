@@ -104,13 +104,20 @@
 
     <TextView
         android:id="@+id/InfoTab2"
-        android:layout_width="225dp"
-        android:layout_height="270dp"
+        android:layout_width="239dp"
+        android:layout_height="374dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="How to Meal Prep"
+        android:text="          How to Meal Prep
+\n\n1.  Choosing a start date and decide what you are going to cook for the week
+\n2.)  cook all food for the week the day before the start of the week
+\n3.)  Store all food in freezer or refrigerator or freezer to keep food fresh
+\n4.)  Keep updated on shopping list, so you do not have to keep going to store for more items
+\n5/)  Eat meals at proper times to keep consumption proportional and do not stack meals
+\n6.)  Repeat for the next two weeks
+"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,12 +129,28 @@
     <TextView
         android:id="@+id/InfoTab1"
         android:layout_width="226dp"
-        android:layout_height="269dp"
+        android:layout_height="317dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="132dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Tips for meal prepping"
+        android:text="          Tips for meal prepping
+
+\n\n1.)  Buy a cooler/freezer bag to keep food fresh
+
+\n2.)  Stick to your Shopping List
+
+\n3.)  Get Mason jars to store some food, like salads
+
+\n4.)  Cook all foods at once
+
+\n5.)  Look for shortcuts, like easy ways to cook large amounts of food or pre-cut veggies and fruits
+
+\n6.)  Make sure you look how much each recipe makes , because you will need multiple of ingredients if you plan to make extra servings
+
+\n7.) Cook meals on SUnday and start at Monday for start of week
+
+\n8.)  Remember why you are doing this"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
