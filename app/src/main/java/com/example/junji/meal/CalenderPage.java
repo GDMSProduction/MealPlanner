@@ -25,12 +25,9 @@ public class CalenderPage extends AppCompatActivity {
     private TextView startdaytext;
 
     private int Maxday;
-    private int beginningweek1;
-    private int beginningweek2;
-    private int beginningweek3;
-    private int endofweek1;
-    private int endofweek2;
-    private int endofweek3;
+    private int week1day1;
+    private int week1day2;
+
     private int Dateday;
     private int Datemonth;
     private int Dateyear;
@@ -135,26 +132,27 @@ public class CalenderPage extends AppCompatActivity {
                     Dateyear = year;
                     Datemonth = month;
                     Dateday = dayOfMonth;
-                    StartDay =Date;
+                    StartDay =Dateyear+"/"+Datemonth+"/"+Dateday;
                     Calendar calendar = Calendar.getInstance();
                     Maxday = Calendar.DAY_OF_MONTH;
-                    beginningweek1= dayOfMonth;
-                    endofweek1 =(dayOfMonth + 6)%Maxday;
-                    beginningweek2 = (endofweek1 +1)%Maxday;
-                    endofweek2 = (beginningweek2 +6)%Maxday;
-                    beginningweek3 = (endofweek2 +1)%Maxday;
-                    endofweek3 = (beginningweek3 +6)%Maxday;
 
                 }
+                if(month == Datemonth){
+                    if(dayOfMonth - Dateday <=6 && dayOfMonth - Dateday >=0){
+                        OpenWeek1();;
+                    }
 
-                if(dayOfMonth >= beginningweek1 && dayOfMonth<= endofweek1){
-                    OpenWeek1();
+                    if(dayOfMonth - Dateday <=13 && dayOfMonth - Dateday >=7){
+                        OpenWeek2();;
+                    }
+                    if(dayOfMonth - Dateday <=20 && dayOfMonth - Dateday >=14){
+                        OpenWeek3();;
+                    }
+
                 }
-                if(dayOfMonth >= beginningweek2 && dayOfMonth<= endofweek2){
-                    OpenWeek2();
-                }
-                if(dayOfMonth >= beginningweek3 && dayOfMonth<= endofweek3){
-                    OpenWeek3();
+                if(month  == Datemonth+1){
+
+                    
                 }
 
 
