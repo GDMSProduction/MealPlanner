@@ -125,16 +125,18 @@ public class CalenderPage extends AppCompatActivity {
 
         startday = findViewById(R.id.starttext);
         Currentday = findViewById(R.id.Currentday);
+        StartDay =2018+"/"+10+"/"+8;
+        startday.setText("Start Day: "+StartDay);
         mcalendarView = (CalendarView) findViewById(R.id.calendarView);
         mcalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange( CalendarView calendarView, int year, int month, int dayOfMonth) {
                 month = month+1;
                 Date = year+"/"+month+"/"+dayOfMonth;
-                if(StartDay == "0"){
-                    Dateyear = year;
-                    Datemonth = month;
-                    Dateday = dayOfMonth;
+                if(StartDay =="2018/10/8"){
+                    Dateyear = 2018;
+                    Datemonth = 10;
+                    Dateday = 8;
                     StartDay =Dateyear+"/"+Datemonth+"/"+Dateday;
                     Calendar calendar = Calendar.getInstance();
                     int lastDate = calendar.getActualMaximum(Calendar.DATE);
@@ -143,7 +145,7 @@ public class CalenderPage extends AppCompatActivity {
                     startday.setText("Start Day: "+StartDay);
 
                 }
-                else if(month == Datemonth){
+                 if(month == Datemonth){
                     if(dayOfMonth - Dateday <=6 && dayOfMonth - Dateday >=0){
                         OpenWeek1();;
                     }
@@ -156,7 +158,7 @@ public class CalenderPage extends AppCompatActivity {
                     }
 
                 }
-                else if(month  == Datemonth+1){
+                 if(month  == Datemonth+1){
 
 
                     if((Maxday+dayOfMonth) - Dateday <=6 && (Maxday+dayOfMonth) - Dateday >=0){
