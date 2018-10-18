@@ -21,6 +21,8 @@ public class RecipePage extends AppCompatActivity {
     private Button snack ;
     private ImageButton recipeview;
     private ImageButton recipeview2;
+    private ImageButton recipeview3;
+    private ImageButton recipeview4;
     public int screen =1;
     public TextView item1;
     public TextView item2;
@@ -48,6 +50,7 @@ public class RecipePage extends AppCompatActivity {
                 GotoItemsRecipe();
             }
         });
+
         recipeview2 = (ImageButton) findViewById(R.id.foodNum2Pic);
         recipeview2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +60,27 @@ public class RecipePage extends AppCompatActivity {
                 GotoItemsRecipe();
             }
         });
+
+        recipeview3 = (ImageButton) findViewById(R.id.foodNum3Pic);
+        recipeview3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ItemNum = 3;
+                GotoItemsRecipe();
+            }
+        });
+
+        recipeview4 = (ImageButton) findViewById(R.id.foodNum4Pic);
+        recipeview4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ItemNum = 4;
+                GotoItemsRecipe();
+            }
+        });
+
         Dinner = (Button) findViewById(R.id.dinner);
         Dinner.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +105,8 @@ public class RecipePage extends AppCompatActivity {
                 Breakfast();
             }
         });
+
+        breakfast.setBackgroundColor(0xffffffff);
 
         snack = findViewById(R.id.snack);
         snack.setOnClickListener(new View.OnClickListener() {
@@ -205,7 +231,7 @@ public class RecipePage extends AppCompatActivity {
             item1.setText("1 Toast with 2 scrambled Eggs");
             item2.setText("Fresh Fruit Plate");
             item3.setText("Farina with walnuts and apples");
-            item4.setText("Oatmeal with apples");
+            item4.setText("Oatmeal with blueberries");
         }
         else if (screen == 2)
         {
