@@ -129,6 +129,7 @@ public class CalenderPage extends AppCompatActivity {
         mcalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange( CalendarView calendarView, int year, int month, int dayOfMonth) {
+                month = month+1;
                 Date = year+"/"+month+"/"+dayOfMonth;
                 if(StartDay == "0"){
                     Dateyear = year;
@@ -182,8 +183,8 @@ public class CalenderPage extends AppCompatActivity {
             }
         });
 
-        String date_d = new SimpleDateFormat(" mm, dd , yyyy", Locale.getDefault()).format(new Date());
 
+        String date_d = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault()).format(new Date());
 
         Currentday.setText("Current day:"+date_d);
 
