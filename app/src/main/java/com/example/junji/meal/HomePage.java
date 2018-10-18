@@ -36,7 +36,7 @@ public class HomePage extends AppCompatActivity {
             "\n-Stir Fried Veggies";
 
     public String week2 = "Breakfast: " +
-            "\n-Oatmeal with apples" +
+            "\n-Oatmeal with blueberries" +
             "\n OR" +
             "\n-Fresh Fruit Plate" +
             "\n\nLunch: " +
