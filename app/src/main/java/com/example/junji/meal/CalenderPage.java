@@ -22,8 +22,9 @@ public class CalenderPage extends AppCompatActivity {
 
     public String Date;
     public String StartDay = "0";
-    private TextView startdaytext;
+    private TextView Currentday;
 
+    private TextView startday;
     private int Maxday;
     private int week1day1;
     private int week1day2;
@@ -122,7 +123,8 @@ public class CalenderPage extends AppCompatActivity {
             }
         });
 
-        startdaytext = findViewById(R.id.Currentday);
+        startday = findViewById(R.id.starttext);
+        Currentday = findViewById(R.id.Currentday);
         mcalendarView = (CalendarView) findViewById(R.id.calendarView);
         mcalendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -134,10 +136,13 @@ public class CalenderPage extends AppCompatActivity {
                     Dateday = dayOfMonth;
                     StartDay =Dateyear+"/"+Datemonth+"/"+Dateday;
                     Calendar calendar = Calendar.getInstance();
-                    Maxday = Calendar.DAY_OF_MONTH;
+                    int lastDate = calendar.getActualMaximum(Calendar.DATE);
+                    Maxday = lastDate;
+                  //  Maxday = calendar.getMaximum(calendar.DAY_OF_MONTH);
+                    startday.setText("Start Day: "+StartDay);
 
                 }
-                if(month == Datemonth){
+                else if(month == Datemonth){
                     if(dayOfMonth - Dateday <=6 && dayOfMonth - Dateday >=0){
                         OpenWeek1();;
                     }
@@ -150,9 +155,19 @@ public class CalenderPage extends AppCompatActivity {
                     }
 
                 }
-                if(month  == Datemonth+1){
+                else if(month  == Datemonth+1){
 
-                    
+
+                    if((Maxday+dayOfMonth) - Dateday <=6 && (Maxday+dayOfMonth) - Dateday >=0){
+                            OpenWeek1();;
+                    }
+
+                    if((Maxday+dayOfMonth )- Dateday <=13 && (Maxday+dayOfMonth )- Dateday >=7){
+                        OpenWeek2();;
+                    }
+                    if((Maxday+dayOfMonth) - Dateday <=20 && (Maxday+dayOfMonth) - Dateday >=14){
+                        OpenWeek3();;
+                    }
                 }
 
 
@@ -167,10 +182,10 @@ public class CalenderPage extends AppCompatActivity {
             }
         });
 
-        String date_d = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault()).format(new Date());
+        String date_d = new SimpleDateFormat(" mm, dd , yyyy", Locale.getDefault()).format(new Date());
 
 
-        startdaytext.setText("Current day:"+date_d);
+        Currentday.setText("Current day:"+date_d);
 
         //TextView calendarList = findViewById(R.id.Textscroll);
         //calendarList.setText(week1);
@@ -214,4 +229,5 @@ public class CalenderPage extends AppCompatActivity {
         Intent intent = new Intent(this,Week3_Meal.class);
         startActivity(intent);
     }
+
 }
