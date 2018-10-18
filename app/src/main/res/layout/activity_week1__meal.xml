@@ -8,11 +8,23 @@
 
     <TextView
         android:id="@+id/week1List"
+        android:layout_width="346dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="week1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/week1BackBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="week1"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
